@@ -904,7 +904,15 @@ class PlayState extends MusicBeatState
 			dad.setPosition(GF_X, GF_Y);
 			gf.visible = false;
 		}
-
+            
+            var creditTxt:FlxText = new FlxText(4,healthBarBG.y + 20,0,("Ported by Farhan124xx "), 24);
+        creditTxt.scrollFactor.set();
+                creditTxt.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+                        creditTxt.borderColor = FlxColor.BLACK;
+                                creditTxt.borderSize = 3;
+                                        creditTxt.borderStyle = FlxTextBorderStyle.OUTLINE;
+                                                add(creditTxt);
+            
 		switch(curStage)
 		{
 			case 'limo':
