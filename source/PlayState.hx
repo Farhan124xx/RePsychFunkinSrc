@@ -1,4 +1,4 @@
-package;
+package; //if you want to port to mobile you can I accept you >:)
 
 #if desktop
 import Discord.DiscordClient;
